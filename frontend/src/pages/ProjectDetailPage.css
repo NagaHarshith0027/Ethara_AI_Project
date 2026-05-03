@@ -1,0 +1,287 @@
+/* ===== Project Detail ===== */
+.project-detail {
+  max-width: 1400px;
+}
+
+.project-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-detail-header-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.project-detail-header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== Role Banner ===== */
+.role-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 14px 20px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+  border: 1px solid;
+  animation: fadeInUp 400ms ease-out;
+}
+
+.role-banner-admin {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(251, 191, 36, 0.04));
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.role-banner-member {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.04));
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.role-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.role-banner-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.role-banner-title {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.role-banner-desc {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.role-banner-permissions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.perm-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.perm-allowed {
+  background: rgba(16, 185, 129, 0.12);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.perm-denied {
+  background: rgba(239, 68, 68, 0.08);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+/* Kanban Overrides */
+.kanban-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 100px;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.kanban-card-overdue {
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.kanban-card-date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  color: var(--text-tertiary);
+}
+
+.overdue-text {
+  color: #fca5a5 !important;
+}
+
+.kanban-card-actions {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.kanban-card:hover .kanban-card-actions {
+  opacity: 1;
+}
+
+.kanban-status-btn {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  transition: all var(--transition-fast);
+}
+
+.kanban-status-btn:hover {
+  background: var(--bg-glass-hover);
+  color: var(--text-primary);
+  border-color: var(--color-primary);
+}
+
+/* Members Modal */
+.members-section-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+  margin-bottom: 10px;
+}
+
+.mb-section {
+  margin-bottom: 4px;
+}
+
+.member-search-box {
+  margin-bottom: 10px;
+}
+
+.available-users-list {
+  max-height: 240px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 2px;
+}
+
+.available-users-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.available-users-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.available-users-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.available-user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--bg-glass);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  gap: 8px;
+}
+
+.available-user-item:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.06);
+}
+
+.members-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+}
+
+.member-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.member-email {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+/* Task view-only (member) */
+.task-view-only {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-view-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-view-value {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.task-view-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .project-detail-header {
+    flex-direction: column;
+  }
+
+  .project-detail-header-actions {
+    width: 100%;
+  }
+
+  .project-detail-header-actions .btn {
+    flex: 1;
+  }
+}
