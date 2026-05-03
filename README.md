@@ -1,1 +1,7 @@
-TaskFlow is a full-stack collaborative task management web application where users can create projects, assign tasks, and track progress. It includes user authentication with JWT, project and member management, and task handling with priorities, due dates, and a Kanban board (To Do, In Progress, Done). The application also provides a dashboard with task statistics, recent and overdue tasks, and supports role-based access where admins have full control and members can update their assigned tasks. It is built using Java 21, Spring Boot, Spring Security, JPA, MySQL on the backend, and React with Vite, Axios, and Recharts on the frontend.
+Team Task Manager — TaskFlow
+
+TaskFlow is a full-stack collaborative task management application that allows users to create projects, assign tasks, and track progress. It includes secure user authentication, project and member management, and task tracking using a Kanban-style workflow (To Do, In Progress, Done).
+
+The application provides a dashboard with task insights such as status distribution, user-wise tasks, recent activities, and overdue tracking. It also supports role-based access, where admins can manage projects, members, and tasks, while members can view and update their assigned tasks.
+
+The backend is built using Java 21, Spring Boot, Spring Security, JPA, and MySQL, while the frontend is developed with React (Vite), Axios, and Recharts.
